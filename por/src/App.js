@@ -8,13 +8,15 @@ import Skills from './containers/skills';
 import Portfolio from './containers/portfolio';
 import Contact from './containers/contact';
 import NavBar from './components/navBar';
+import ParticleBackground from './particles';
 
 
 function App() {
+
   return (
     <div className="App">
         {/* particles js */}
-
+        <ParticleBackground/>
         {/* nav bar */}
         <NavBar />
         {/* main page content */}
