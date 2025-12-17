@@ -31,7 +31,7 @@ const Skills = () =>{
                                 }}
                                 >
                                     <h3 className="skills_content-wrapper_inner-content_category-text">{item.label}</h3>
-                                    <div>
+                                    <div className="skills_content-wrapper_inner-content_progressbar-container">
                                         {
                                             item.data.map((skillItem, j) => (
                                                 <AnimateKeyframes
@@ -42,7 +42,12 @@ const Skills = () =>{
                                                 >
                                                     <div className="progressbar-wrapper" key={j}>
                                                         <p>{skillItem.skillName}</p>
-                                                        <Line percent={skillItem.percentage} strokeWidth="2" strokeColor="var(--yellow-theme-main-color)" trailWidth={"2"} stokeLinecap="square"/>
+                                                        <Line
+                                                        percent={skillItem.percentage}
+                                                        strokeWidth="2"
+                                                        strokeColor="var(--yellow-theme-main-color)" trailWidth={"2"}
+                                                        strokeLinecap="square"
+                                                        />
                                                     </div>
                                                 </AnimateKeyframes>
                                             ))
@@ -53,7 +58,6 @@ const Skills = () =>{
                         ))
                     }
                 </div>
-
             </section>
         </div>
     );

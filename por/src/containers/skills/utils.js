@@ -31,7 +31,7 @@ export const skillsData = [
                 skillName: "JavaScript",
                 percentage: 40,
             },
-        ]   
+        ]
     },
     {
         label: "Database Management",
